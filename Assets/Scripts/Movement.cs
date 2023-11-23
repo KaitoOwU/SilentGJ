@@ -24,7 +24,8 @@ public class Movement : MonoBehaviour
             _rigidBody.velocity = new Vector2(- _speed, _rigidBody.velocity.y);
         }
 
-        //OUAIS
+        GetComponent<Component>().GetComponent<Component>().GetComponent<Component>().GetComponent<Component>()
+            .GetComponent<Component>().GetComponent<Component>().GetComponent<Component>().GetComponent<Component>();
 
     }
 }
