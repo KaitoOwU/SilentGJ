@@ -24,7 +24,11 @@ public class Movement : MonoBehaviour
             _rigidBody.velocity = new Vector2(- _speed, _rigidBody.velocity.y);
         }
 
-        //OUAIS
+        Debug.DrawLine(_groundCheck.position, _groundCheck.position + new Vector3(0, -0.1f, 0));
+        if (Physics2D.OverlapCircle(_groundCheck.position, 0.1f, _groundLayer) && Input.GetKeyDown(KeyCode.Space))
+        {
+            _rigidBody.AddForce(new Vector2(0, _jumpForce));
+        }
 
     }
 }
